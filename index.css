@@ -1,0 +1,85 @@
+img {
+  width: 60px;
+  border-radius: 20px;
+}
+
+header {
+  border-radius: 25px 25px 0 0;
+
+  background-image: linear-gradient(to bottom, var(--magenta), var(--violet));
+
+  font-size: 14px;
+  display: flex;
+  padding: 1em 10px;
+  gap: 1em;
+  align-items: center;
+}
+header img {
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 50%;
+}
+h1 {
+  color: rgba(255, 255, 255, 0.956);
+  font-size: 1.4em;
+}
+h1 span {
+  color: hsl(276, 100%, 81%);
+  font-size: 0.6em;
+}
+.chat_box {
+  font-size: 14px;
+  background-color: hsl(270, 20%, 96%);
+  border-radius: 0 0 25px 25px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+.chat_box > * {
+}
+.chat_box :nth-child(3),
+:nth-child(4),
+:nth-child(5) {
+  align-self: flex-end;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(271, 15%, 43%) !important;
+}
+.chat_box > p {
+  background-color: hsla(107, 8%, 89%, 0.915);
+
+  color: hsl(276, 55%, 52%);
+  width: 60%;
+  border-radius: 10px;
+  padding: 10px 8px;
+}
+div.plan {
+  display: flex;
+  border: 1px solid;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, var(--magenta), var(--violet));
+  color: hsl(0, 0%, 100%);
+}
+.plan p {
+  opacity: 0.7;
+  font-weight: 500;
+}
+input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 20px;
+}
+@media (max-width: 410px) {
+  * {
+    font-size: 12px;
+  }
+  img {
+    border-radius: 20px;
+    width: 40px;
+  }
+}

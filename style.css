@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap");
+
+:root {
+  --magenta: hsl(293, 100%, 63%);
+  --violet: hsl(264, 100%, 61%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "rubik", sans-serif;
+  position: relative;
+  background-color: hsl(206, 6%, 79%, 0.6);
+  min-height: 100vh;
+}
+.container {
+  width: calc(100% - 280px);
+  margin-left: 280px;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  /* transform: translatex(20px); */
+}
+div.bg_content {
+  z-index: -3;
+  position: absolute;
+  background-image: linear-gradient(to bottom, var(--magenta), var(--violet));
+  height: 95vh;
+  transform: translateX(-30px);
+  width: min(500px, 80%);
+
+  border-radius: 0 0 50% 150px;
+}
+div.phone_content {
+  border: 8px solid white;
+  border-radius: 25px;
+  display: flex;
+  width: 400px;
+}
+div.massage_content {
+  z-index: 1;
+  left: 300px;
+}
+.main_content {
+  font-size: 16px;
+  width: 40%;
+}
+.main_content h2 {
+  font-size: 2.5em;
+  color: hsl(271, 36%, 24%);
+  margin-bottom: 12px;
+}
+.main_content p {
+  font-size: 1.1em;
+  word-spacing: 3px;
+  line-height: 1.4 em;
+  color: hsl(270, 7%, 64%);
+}
+@media (max-width: 1000px) {
+  .container {
+    width: calc(100% - 100px);
+    margin-left: 100px;
+  }
+  .main_content h2 {
+    font-size: 2em;
+  }
+  .main_content p {
+    font-size: 1em;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+    margin-left: 0;
+    display: block;
+    min-height: 100vh;
+    /* margin-top: 1em; */
+    /* transform: translatex(20px); */
+  }
+  div.bg_content {
+    z-index: -3;
+    height: 95vh;
+    transform: translateX(-30px);
+    width: min(500px, 70%);
+
+    border-radius: 0 0 1000px 0;
+    border-bottom-left-radius: 0;
+  }
+  div.phone_content {
+    display: flex;
+    width: 400px;
+    max-width: calc(100% - 30px);
+    margin: 0 auto;
+    margin-bottom: 2em;
+    transform: translateY(2em);
+  }
+  div.massage_content {
+    z-index: 1;
+    left: 300px;
+  }
+  .main_content {
+    width: min(400px, 70%);
+    text-align: center;
+    margin: 3em auto;
+  }
+  .main_content h2 {
+    font-size: 2.5em;
+    color: hsl(271, 36%, 24%);
+    margin-bottom: 12px;
+  }
+  .main_content p {
+    font-size: 1.1em;
+  }
+}
