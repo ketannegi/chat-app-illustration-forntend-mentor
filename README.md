@@ -10,8 +10,9 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
 ### Links
 
 - Solution URL: [site]( https://ketannegi.github.io/chat-app-illustration-forntend-mentor/)
-- Live Site URL: [@ketanegi](https://www.frontendmentor.io/profile/ketannegi)f
-  -github repository: ()
+- Live Site URL: [@ketanegi](https://www.frontendmentor.io/profile/ketannegi)
+  -github repository: ( https://ketannegi.github.io/chat-app-illustration-forntend-mentor/)
+  frontend-mentor: [@ketannegi] (https://www.frontendmentor.io/profile/ketannegi)
 
 ## My process
 
